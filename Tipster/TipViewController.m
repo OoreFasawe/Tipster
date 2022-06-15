@@ -26,7 +26,7 @@
     [self.view endEditing:true];
 }
 - (IBAction)updateTotal:(id)sender {
-    double tipPercentages[] = {0.25, 0.50, 0.75, 1.00};
+    double tipPercentages[] = {0.05, 0.1, 0.15, 0.20};
     double selectedTipPercent = tipPercentages[self.tipSegCtrl.selectedSegmentIndex];
     
     double tip = self.billField.text.doubleValue * selectedTipPercent;
